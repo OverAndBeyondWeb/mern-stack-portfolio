@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const keys = require('./config/keys');
 
 const app = express();
 
@@ -9,7 +10,8 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://localhost:27017/portfolioTestDB', {useNewUrlParser: true});
+mongoose.connect(keys.mongoURI, {useNewUrlParser: true});
+
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
