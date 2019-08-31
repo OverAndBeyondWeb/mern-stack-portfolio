@@ -4,7 +4,8 @@
   "description": "\"Rewrite of my portfolio using the MERN stack\"",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
