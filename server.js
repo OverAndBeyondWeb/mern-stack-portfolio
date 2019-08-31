@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
-const Projects = require('./models/Project');
 const path = require('path');
 
 const app = express();
@@ -24,17 +23,6 @@ db.once('open', function() {
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/public/temp.html'));
-});
-console.log(Projects);
-app.get('/api/projects', (req, res) => {
-  Projects.find()
-    .then(projects => {
-      console.log(Projects.find({title: 'myTytel'}));
-      res.json(projects);
-    })
-    .catch(function(err) {
-      console.log(err);
-    });
 });
 
 app.listen(PORT, () => {
