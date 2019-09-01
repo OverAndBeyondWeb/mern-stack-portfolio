@@ -11,10 +11,6 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-var distDir = __dirname + "client/dist/";
-app.use(express.static(distDir));
-app.use(express.static('public'));
-
 mongoose.connect(keys.mongoURI, {useNewUrlParser: true});
 
 var db = mongoose.connection;
@@ -30,6 +26,14 @@ app.get('/', (req, res) => {
 app.get('/api', (req, res) => {
   Project.find().then((resp) => res.json(resp));
 });
+
+if(process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+  const path = require('path');
+  app.get('*', (req, res) => {
+    res.sendfile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  })
+}
 
 app.listen(PORT, () => {
   console.log(`listening on port: ${PORT}`);
