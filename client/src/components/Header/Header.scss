@@ -1,0 +1,138 @@
+$main-color: purple;
+  $secondary-color: lighten($main-color, 20%);
+
+header {
+  width: 100%;
+}
+.header-content {
+  color: #283b4a;
+  padding: 10px 5px;
+}
+
+.branding {
+  height: 100%;
+  width: 50%;
+  float: left;
+
+  .name {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .position-title {
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 30rem){
+    .name {
+      font-size: 1.125em;
+    }
+    .position-title {
+      font-size: .75em;
+    }
+  }
+
+}
+
+.page-nav {
+  width: 50%;
+  height: 100%;
+  float: right;
+
+  .fa {
+    display: none;
+    float: right;
+  }
+
+  ul {
+    margin: 0;
+    padding: 15px 0 0 0;
+    display: flex;
+    white-space: nowrap;
+  }
+
+  li {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .navLink a{
+    color: #283b4a;
+
+    &.router-link-active {
+    color: #7CB9C0;
+  }
+
+    &:hover {
+      color: #A7CBDD;
+    }
+
+    &:after {
+      content: "";
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      background: $secondary-color;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: transform .25s;
+    }
+
+    &:hover:after {
+      visibility: visible;
+      transform: scaleX(1);
+      color: #A7CBDD;
+    }
+  }
+
+  .router-link-active {
+    color: #A7CBDD;
+  }
+
+  .login-btn {
+    cursor: pointer;
+
+    &:hover {
+      color: #A7CBDD;
+    }
+  }
+
+  @media screen and (max-width: 37.5rem){
+
+    ul {
+      display: inline-block;
+      background: rgba(0, 0, 0, .6);
+      z-index: 1000;
+      height: 100vh;
+      width: 40vw;
+      position: fixed;
+      top: 5px;
+      right: -40vw;
+      transition: all .25s linear;
+
+      li {
+        padding: 10px 0;
+        border-bottom: 2px solid black;
+      }
+    }
+    .fa {
+      display: inline-block;
+    }
+    .fa-window-close-o {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+    }
+    .hidden {
+      display: none;
+    }
+    .slide-nav {
+      right: 0;
+    }
+  }
+}
