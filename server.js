@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
 const path = require('path');
-
+const Project = require('./models/Project');
 const app = express();
 
 const PORT = process.env.PORT || 3001;
@@ -23,6 +23,10 @@ db.once('open', function() {
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/public/temp.html'));
+});
+
+app.get('/api', (req, res) => {
+  Project.find().then((resp) => res.json(resp));
 });
 
 app.listen(PORT, () => {
