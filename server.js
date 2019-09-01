@@ -19,10 +19,6 @@ db.once('open', function() {
   console.log('connection is made');
 });
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + '/public/temp.html'));
-});
-
 app.get('/api', (req, res) => {
   Project.find().then((resp) => res.json(resp));
 });
