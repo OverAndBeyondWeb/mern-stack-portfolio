@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <radialGradient id="d" cx="11.626" cy="12.884" r="17.171" gradientTransform="matrix(0 2.0467 1.5576 0 3.913 -25.871)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <radialGradient id="a" cx="24.837" cy="36.421" r="15.645" gradientTransform="matrix(1 0 0 .53672 0 16.873)" gradientUnits="userSpaceOnUse">
+   <stop offset="0"/>
+   <stop stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <radialGradient id="c" cx="13.362" cy="35.664" r="16.956" gradientTransform="matrix(-.011256 3.111 -2.0197 -.007307 82.594 -32.516)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fee39e" offset="0"/>
+   <stop stop-color="#f18c00" offset=".24"/>
+   <stop stop-color="#ec6600" offset=".5"/>
+   <stop stop-color="#e83a00" offset="1"/>
+  </radialGradient>
+  <radialGradient id="b" cx="121.36" cy="49.792" r="17.5" gradientTransform="matrix(-.036339 2.7225 -1.5006 -.02003 97.628 -316.49)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#f5a300" offset="0"/>
+   <stop stop-color="#f18c00" offset=".22"/>
+   <stop stop-color="#aa2900" offset="1"/>
+  </radialGradient>
+ </defs>
+ <path transform="matrix(1.4292 0 0 .59546 -11.496 14.742)" d="m40.482 36.421a15.645 8.3969 0 1 1 -31.289 0 15.645 8.3969 0 1 1 31.289 0z" fill="url(#a)" fill-rule="evenodd" opacity=".2045"/>
+ <path d="m15.531 2.5938v12.938h-8.0312l17.172 20.062 16.797-20-7.9688-0.0625v-12.938z" fill="url(#c)" fill-rule="evenodd" stroke="url(#b)" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+ <path d="m8.5987 16.068 7.4064-0.01172-3e-3 -12.993 17.059 0.04647-0.0655 12.951 7.346 0.0061-5.393 6.1093c-12.623-6.1137-9.8209 4.6618-21.291-0.15899z" fill="url(#d)" fill-rule="evenodd" opacity=".508"/>
+ <path d="m16.531 3.5625v13l-6.875-0.03125 15.031 17.531 14.641-17.484-6.8281-0.01563 0.0625-13z" fill="none" opacity=".7" stroke="#fff" stroke-miterlimit="10"/>
+</svg>

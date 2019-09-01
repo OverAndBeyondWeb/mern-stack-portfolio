@@ -11,7 +11,8 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-app.use(express.static('public'));
+const distDir = __dirname + "client/dist/";
+app.use(express.static(distDir));
 
 mongoose.connect(keys.mongoURI, {useNewUrlParser: true});
 

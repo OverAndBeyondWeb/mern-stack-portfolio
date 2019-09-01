@@ -1,0 +1,17 @@
+<svg class="my-svg" height="48" width="48" preserveAspectRatio="xMinYMin meet">
+
+    <defs>
+        <linearGradient id="textgradient" x1="0%" x2="100%" y1="0%" y2="0%">
+            <stop stop-color = "#EBEBEB" offset = "50%"/>
+            <stop stop-color = "#FFFFFF" offset = "100%"/>
+        </linearGradient>
+    </defs>
+
+    <polygon points="3 0,46 0,39.5 43,22 48,8.5 43" style="fill:#d827b3;stroke:none;stroke-width:0.5" />
+
+    <polygon points="24 4,41 4,35 39.5,24 43" style="fill:#e600e6;stroke:none;stroke-width:0.5" />
+
+    <text x="9" y="38" style="fill:url(#textgradient); font-weight:bold; font-size:40px; font-family:verdana;">5</text>
+
+    Sorry, your browser does not support inline SVG.
+</svg>
