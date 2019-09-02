@@ -3,9 +3,6 @@ import './LandingPage.scss';
 
 import Header from '../Header/Header';
 
-let styles = {
-
-}
 export default () => (
   <div class="landing-page">
     <Header />
