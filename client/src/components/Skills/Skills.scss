@@ -1,0 +1,40 @@
+.skills {
+  background: white;
+  padding: 3% 0 10% 0;
+  color: #283b4a;
+}
+.skills-container {
+  display: flex;
+  
+  @media screen and (max-width: 42.94rem){
+    flex-direction: column;
+  }
+}
+.skill {
+  flex-grow: 1;
+  flex-basis: 30%;
+  text-align: center;
+
+  @media screen and (max-width: 64.25rem) {
+    margin-bottom: 70px;
+  }
+
+}
+.skill-content {
+  padding: 0 10%;
+  line-height: 1.5em;
+  text-align: left;
+
+  @media screen and (max-width: 64.25rem) {
+    text-align: left;
+  }
+
+  p {
+    font-family: 'Merriweather', serif;
+    color: #283b4a; 
+  }
+}
+
+.icon {
+  margin: 0 auto;
+}
