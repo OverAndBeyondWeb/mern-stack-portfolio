@@ -3,6 +3,7 @@ import './Home.scss';
 
 import LandingPage from '../LandingPage/LandingPage';
 import Skills from '../Skills/Skills';
+import Quote from '../Quote/Quote';
 
 class Home extends Component {
 
@@ -12,6 +13,7 @@ class Home extends Component {
       <div className="Home">
         <LandingPage />
         <Skills />
+        <Quote />
       </div>
       
     );
