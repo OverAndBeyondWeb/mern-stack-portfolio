@@ -4,12 +4,12 @@ export default ({ title, description, imgUrl, link}) => (
   <li className="project">
     
       <div className="project-content">
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noopener noreferrer">
           <h3>{title}</h3>
         </a>
-        <p>{description}</p>
+        <p dangerouslySetInnerHTML={{__html: description}}></p>
       </div>
-      <a className="project-link" href={link} target="_blank">
+      <a className="project-link" href={link} target="_blank" rel="noopener noreferrer">
         <div className="image-link panel-1">
           <button>
             visit site!
