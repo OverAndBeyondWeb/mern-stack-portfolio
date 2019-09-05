@@ -15,7 +15,7 @@ export default ({ title, description, imgUrl, link}) => (
             visit site!
           </button>
         </div>
-        <div className="project-image" style={{backgroundImage: `url(/images/${imgUrl})`, backgroundSize:'100% 100%'}}>
+        <div className="project-image" style={{backgroundImage: `url(${imgUrl})`, backgroundSize:'100% 100%'}}>
         </div>
       </a>
     

@@ -61,7 +61,7 @@ class Projects extends Component {
               return <Project 
                             title={project.title}
                             description={project.description}
-                            imgUrl={project.imgUrl}
+                            imgUrl={require(`../../images/${project.imgUrl}`)}
                             link={project.link}
                           />
             })}
