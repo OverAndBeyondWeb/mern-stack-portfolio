@@ -19,13 +19,13 @@ class Projects extends Component {
         "title" : "JQuery Image Slider"
       },
       {
-        "description" : "This site features a calculator built with JQuery. The buttons\n        are pure CSS, and the body is an image created in\n        <a href=\"https://www.adobe.com/Photoshop \" target=\"_blank\">Adobe Photoshop.</a>",
+        "description" : "This site features a calculator built with JQuery. The buttons are pure CSS, and the body is an image created in <a href=\"https://www.adobe.com/Photoshop \" target=\"_blank\">Adobe Photoshop.</a>",
         "imgUrl" : "thumbnail3.jpg",
         "link" : "http://overandbeyondweb.xyz/calculator.html",
         "title" : "JQuery Calculator"
       },
       {
-        "description" : "A website for those who seek web design services from a professional\n        web developer.",
+        "description" : "A website for those who seek web design services from a professional web developer.",
         "imgUrl" : "thumbnail4.jpg",
         "link" : "http://overandbeyondweb.xyz/index.html",
         "title" : "Over and Beyond Web Design"
