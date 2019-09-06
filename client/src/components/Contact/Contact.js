@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Contact.scss';
 
+import { Link } from 'react-router-dom';
+
 class Contact extends Component {
   
   state = {
@@ -10,7 +12,7 @@ class Contact extends Component {
   render() {
 
     return (
-      <form id="contact" class="container">
+      <form id="contact" className="container">
         <h3>Let's get some things done!</h3>
         <h4>What do you have in mind?</h4>
         <fieldset>
@@ -32,7 +34,7 @@ class Contact extends Component {
         <fieldset>
           <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
         </fieldset>
-        <p class="back-link">&larr; Back</p>
+        <p className="back-link"><Link to="/">&larr; Back</Link></p>
       </form>
     )
   }
