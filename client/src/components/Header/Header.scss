@@ -64,19 +64,21 @@ header {
  
   .navLink { 
     color: #283b4a;
+    display: inline-block;
+    position: relative;
+    transition: color .25s;
 
     &:hover {
-      color: #A7CBDD;
+      color: lighten(#4c708c, 20%);
     }
 
     &:after {
       content: "";
+      display: block;
+      position: absolute;
+      right: 0;
       height: 1px;
       width: 100%;
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      background: $secondary-color;
       visibility: hidden;
       transform: scaleX(0);
       transition: transform .25s;
@@ -85,12 +87,25 @@ header {
     &:hover:after {
       visibility: visible;
       transform: scaleX(1);
-      color: #A7CBDD;
+      background: lighten(#4c708c, 20%);
     }
   }
 
   .current {
     color: #61A3B3;
+  
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      height: 1px;
+      width: 100%;
+      visibility: visible;
+      transform: scaleX(1);
+      background: #61A3B3;
+      transition: transform .25s;
+    }
   }
 
   .login-btn {
