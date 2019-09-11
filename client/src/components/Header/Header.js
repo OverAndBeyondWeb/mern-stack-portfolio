@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Header.scss';
 
+import { NavLink } from 'react-router-dom';
+
 class Header extends Component {
 
 
@@ -17,9 +19,9 @@ class Header extends Component {
 
             <ul id="site-nav">
               <i id="close-nav" className="fa fa-window-close-o" aria-hidden="true"></i>
-              <li className="navLink current">HOME</li>
-              <li className="navLink">PROJECTS</li>
-              <li className="navLink">CONTACT</li>
+              <li><NavLink to="/" className="navLink" activeClassName="current">HOME</NavLink></li>
+              <li><NavLink to="/#projects" className="navLink" activeClassName="current">PROJECTS</NavLink></li>
+              <li><NavLink to="/contact" className="navLink" activeClassName="current">CONTACT</NavLink></li>
             </ul>
           </nav>
         </div>

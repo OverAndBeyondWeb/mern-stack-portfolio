@@ -52,19 +52,18 @@ header {
     padding: 15px 0 0 0;
     display: flex;
     white-space: nowrap;
+    
   }
 
   li {
     flex-grow: 1;
-    text-align: center;
+    text-align: right;
   }
 
-  .navLink a{
+  
+ 
+  .navLink { 
     color: #283b4a;
-
-    &.router-link-active {
-    color: #7CB9C0;
-  }
 
     &:hover {
       color: #A7CBDD;
@@ -90,8 +89,8 @@ header {
     }
   }
 
-  .router-link-active {
-    color: #A7CBDD;
+  .current {
+    color: #61A3B3;
   }
 
   .login-btn {
