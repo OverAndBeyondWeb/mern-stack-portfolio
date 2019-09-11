@@ -4,9 +4,9 @@ import './Skill.scss';
 export default ({ icon, title, body, num}) => {
 
   return (
-    <div class={`skill skill-${num}`}>
-      <div class={`icon ${icon}`}></div>
-      <div class="skill-content">
+    <div className={`skill skill-${num}`}>
+      <div className={`icon ${icon}`}></div>
+      <div className="skill-content">
         <h3>
           <strong>{title}</strong> 
         </h3>  

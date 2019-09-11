@@ -53,8 +53,8 @@ class Projects extends Component {
 
   render() {
     return (
-      <div id="projects" class="projects">
-        <div class="projects-container wrap">
+      <div id="projects" className="projects">
+        <div className="projects-container wrap">
           <h1>Projects</h1>
           <ul>
             {this.state.projects.map(project => {
@@ -63,6 +63,7 @@ class Projects extends Component {
                             description={project.description}
                             imgUrl={require(`../../images/${project.imgUrl}`)}
                             link={project.link}
+                            key={project.title}
                           />
             })}
           </ul>

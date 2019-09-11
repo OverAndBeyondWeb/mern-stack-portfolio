@@ -37,8 +37,8 @@ class Skills extends Component {
 
   render() {
     return (
-      <div class="skills">
-        <div class="skills-container wrap">
+      <div className="skills">
+        <div className="skills-container wrap">
           {this.state.skills.map(skill => <Skill 
                                             icon={skill.icon}
                                             title={skill.title}
