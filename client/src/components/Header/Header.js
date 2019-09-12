@@ -5,12 +5,6 @@ import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
 
-
-  scrollToProjects() {
-    console.log('yep');
-    window.scrollTo(0, 100);
-  }
-
   render() {
     return (
       <header>
@@ -24,8 +18,8 @@ class Header extends Component {
 
             <ul id="site-nav">
               <i id="close-nav" className="fa fa-window-close-o" aria-hidden="true"></i>
-              <li onClick={this.scrollToProjects}><NavLink to="/" className="navLink" activeClassName="current">HOME</NavLink></li>
-              <li><NavLink to="/#projects" className="navLink" activeClassName="current">PROJECTS</NavLink></li>
+              <li><NavLink to="/" className="navLink" activeClassName="current">HOME</NavLink></li>
+              <li onClick={this.props.scrollToProjects}><NavLink to="/#projects" className="navLink" activeClassName="current">PROJECTS</NavLink></li>
               <li><NavLink to="/contact" className="navLink" activeClassName="current">CONTACT</NavLink></li>
             </ul>
           </nav>

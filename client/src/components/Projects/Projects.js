@@ -53,7 +53,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <div id="projects" className="projects">
+      <div id="projects" className="projects" ref={this.props.projectsRef}>
         <div className="projects-container wrap">
           <h1>Projects</h1>
           <ul>
